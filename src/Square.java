@@ -1,2 +1,22 @@
-package PACKAGE_NAME;public class Square {
+public class Square extends Geometry{
+    private double side;
+
+    public Square(double side) {
+        this.side = side;
+    }
+
+    public double getSide() {
+        return side;
+    }
+
+    public void setSide(double side) {
+        this.side = side;
+    }
+
+    @Override
+    public String toString() {
+        return "Square{" +
+                "side=" + side +
+                '}';
+    }
 }
